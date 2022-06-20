@@ -1,0 +1,280 @@
+// Header
+
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 2;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      height: 60px;
+    }
+
+    .navigation .link {
+      color: $secondary-text-color;
+    }
+
+    .contacts .link {
+      display: flex;
+      align-items: center;
+      color: $primary-text-color;
+
+      & .icon {
+        display: block;
+        margin-right: 10px;
+        fill: $primary-text-color;
+
+        @include transition(fill);
+      }
+
+      &:hover .icon,
+      &:focus .icon {
+        fill: $accent-color;
+      }
+    }
+
+    .link {
+      display: flex;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+
+      @include transition(color);
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+
+      &.current {
+        position: relative;
+        color: $accent-color;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 4px;
+          border-radius: 2px;
+          background-color: $accent-color;
+        }
+      }
+    }
+  }
+}
+
+// Menu Button
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  & .icon-close,
+  & .icon-menu {
+    @include transition(fill);
+  }
+
+  &:hover .icon-close,
+  &:focus .icon-close,
+  &:hover .icon-menu,
+  &:focus .icon-menu {
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+
+// Menu Container
+
+.menu-container {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 100%;
+
+    left: 0;
+
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+
+    display: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $primary-white-color;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    &.is-open {
+      display: block;
+    }
+
+    // Navigation
+    // Contacts
+
+    .navigation,
+    .contacts {
+      > .item {
+        font-size: 0;
+
+        & .link {
+          position: relative;
+          display: inline-block;
+          font-size: 18px;
+          line-height: 1.17;
+        }
+      }
+    }
+
+    > .navigation {
+      margin-bottom: 60px;
+
+      .link.current {
+        color: $accent-color;
+        padding-bottom: 12px;
+      }
+
+      .item:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    > .contacts span {
+      display: inline-block;
+    }
+
+    > .contacts .link {
+      display: flex;
+      align-items: baseline;
+    }
+
+    > .contacts .item:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    > .contacts > .item:nth-child(1) .icon {
+      width: 16px;
+      height: 12px;
+    }
+
+    > .contacts > .item:nth-child(2) .icon {
+      width: 10px;
+      height: 15px;
+    }
+  }
+}
+
+// Media 768px
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      padding-left: 85px;
+
+      > .item {
+        &:not(:last-child) {
+          margin-right: 50px;
+        }
+
+        > .link {
+          padding-top: 32px;
+          padding-bottom: 32px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1.14;
+        }
+      }
+    }
+    .contacts {
+      display: flex;
+
+      @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        justify-content: center;
+
+        .link {
+          font-size: 12px;
+          line-height: 1.17;
+        }
+
+        > .item:nth-child(1) {
+          margin-bottom: 10px;
+
+          .icon {
+            width: 14px;
+            height: 10px;
+          }
+        }
+
+        > .item:nth-child(2) .icon {
+          width: 10px;
+          height: 14px;
+        }
+      }
+    }
+  }
+}
+
+// Media 1200px
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    .contacts {
+      display: flex;
+      align-items: center;
+      .link {
+        font-size: 14px;
+        line-height: 1.143;
+      }
+
+      > .item:nth-child(1) {
+        margin-right: 30px;
+
+        .icon {
+          width: 16px;
+          height: 12px;
+        }
+      }
+
+      > .item:nth-child(2) .icon {
+        width: 10px;
+        height: 15px;
+      }
+    }
+  }
+}
+

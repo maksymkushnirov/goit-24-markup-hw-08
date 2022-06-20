@@ -1,0 +1,44 @@
+// Hero
+
+.title.hero {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+.button.hero {
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title.hero {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

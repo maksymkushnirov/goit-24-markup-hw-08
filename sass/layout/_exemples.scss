@@ -1,0 +1,31 @@
+// Exemples
+
+// Media 1200px
+
+@media screen and (min-width: 1200px) {
+  .exemples-list {
+    display: flex;
+
+    .item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    .subtitle {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+      width: 100%;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      background-color: rgba(47, 48, 58, 0.8);
+
+      font-weight: 700;
+      line-height: 1.14;
+      text-align: center;
+      text-transform: uppercase;
+      color: $primary-white-color;
+    }
+  }
+}

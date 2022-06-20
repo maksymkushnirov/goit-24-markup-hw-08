@@ -1,0 +1,11 @@
+// Page main
+
+.page-main {
+  &.border-top {
+    border-top: 1px solid #ececec;
+  }
+
+  > .section:nth-last-child(2) {
+    background-color: $secondary-white-color;
+  }
+}
