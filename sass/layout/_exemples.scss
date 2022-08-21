@@ -1,9 +1,9 @@
-// Exemples
+// examples
 
 // Media 1200px
 
 @media screen and (min-width: 1200px) {
-  .exemples-list {
+  .examples-list {
     display: flex;
 
     .item:not(:last-child) {
