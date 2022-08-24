@@ -1,4 +1,4 @@
-// Section
+// section
 
 .section {
   width: 100%;
@@ -8,7 +8,7 @@
   & .title {
     font-weight: 700;
     text-align: center;
-    color: $secondary-text-color;
+    color: $color-text-secondary;
 
     @media screen and (max-width: 1199px) {
       margin-bottom: 30px;
@@ -31,17 +31,17 @@
   }
 }
 
-// Sectin Hero
+// sectin hero
 
 .section.hero {
   text-align: center;
-  background-color: $primary-text-color;
+  background-color: $color-text-primary;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url('../images/mobile/hero-480.jpg');
+    url('/images/index/hero/mobile/hero-480.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,11 +56,11 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url('../images/mobile/hero-960.jpg');
+      url('/images/index/hero/mobile/hero-960.jpg');
   }
 }
 
-// Media 768px
+// media 768px
 
 @media screen and (min-width: 481px) {
   .section.hero {
@@ -69,7 +69,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url('../images/tablet/hero-768.jpg');
+      url('/images/index/hero/tablet/hero-768.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -81,12 +81,12 @@
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
         ),
-        url('../images/tablet/hero-1536.jpg');
+        url('/images/index/hero/tablet/hero-1536.jpg');
     }
   }
 }
 
-// Media 1200px
+// media 1200px
 
 @media screen and (min-width: 769px) {
   .section.hero {
@@ -95,7 +95,7 @@
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url('../images/desktop/hero-1600.jpg');
+      url('/images/index/hero/desktop/hero-1600.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -107,7 +107,7 @@
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
         ),
-        url('../images/desktop/hero-3200.jpg');
+        url('/images/index/hero/desktop/hero-3200.jpg');
     }
   }
 }
@@ -128,7 +128,7 @@
   }
 }
 
-// Section examples
+// section-examples
 
 .section.examples {
   padding-top: 0;

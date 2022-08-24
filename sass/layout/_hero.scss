@@ -1,4 +1,4 @@
-// Hero
+// hero
 
 .title.hero {
   margin-bottom: 30px;
@@ -10,13 +10,15 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $primary-white-color;
+  color: $color-white-primary;
 
   @media screen and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.62;
   }
 }
+
+    // button-order
 
 .button.hero {
   padding-top: 10px;
@@ -29,9 +31,9 @@
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-  color: $primary-white-color;
+  color: $color-white-primary;
 
-  background-color: $accent-color;
+  background-color: $color-accent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }

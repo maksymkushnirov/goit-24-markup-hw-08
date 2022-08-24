@@ -1,4 +1,4 @@
-// Footer
+// footer
 
 .page-footer {
   padding-top: 60px;
@@ -12,6 +12,8 @@
       align-items: center;
     }
 
+//footer-nav
+
     & > .contacts {
       @media screen and (max-width: 1199px) {
         display: inline-block;
@@ -21,11 +23,11 @@
   }
 }
 
-// Address
-
 .footer-list > .item:not(:last-child) {
   margin-bottom: 5px;
 }
+
+// footer-contacts
 
 .page-footer .contacts {
   @media screen and (max-width: 1199px) {
@@ -35,16 +37,16 @@
   .footer-list .link {
     text-decoration: none;
     font-style: normal;
-    color: $secondary-grey;
+    color: $color-grey-secondary;
 
     .google-map {
       display: block;
-      color: $primary-white-color;
+      color: $color-white-primary;
     }
   }
 }
 
-// Join
+// join-block
 
 .join-set {
   display: flex;
@@ -70,11 +72,11 @@
 
   & .button:hover,
   & .button:focus {
-    background-color: $accent-color;
+    background-color: $color-accent;
   }
 }
 
-// Mailing
+// subscription
 
 .mailing {
   @media screen and (max-width: 767px) {
@@ -88,7 +90,7 @@
 
     font-size: 16px;
     line-height: 1.25;
-    color: $primary-white-color;
+    color: $color-white-primary;
 
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -132,11 +134,11 @@
     line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
-    color: $primary-white-color;
+    color: $color-white-primary;
 
     border: none;
     border-radius: 4px;
-    background-color: $accent-color;
+    background-color: $color-accent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     &::after {
@@ -144,12 +146,12 @@
       width: 24px;
       height: 24px;
       margin-left: 10px;
-      background-image: url("../images/footer/mailing-icon.svg");
+      background-image: url("/images/subscription.svg");
     }
   }
 }
 
-// Media 768px
+// media 768px
 
 @media screen and (min-width: 768px) {
   .page-footer .mailing {
@@ -157,7 +159,7 @@
   }
 }
 
-// Media 1200px
+// media 1200px
 
 @media screen and (min-width: 1200px) {
   .page-footer .contacts {

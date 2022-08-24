@@ -1,4 +1,4 @@
-// Form
+// form
 
 .form-field {
   display: block;
@@ -16,14 +16,14 @@
 
     line-height: 1.14;
     letter-spacing: 0.01em;
-    color: $primary-text-color;
+    color: $color-text-primary;
 
     &:hover {
       cursor: auto;
     }
   }
 
-  // Input
+  // input
 
   .form-input {
     width: 100%;
@@ -34,7 +34,7 @@
     outline: 0;
 
     &:not(:placeholder-shown) ~ .icon-wrap .icon {
-      fill: $accent-color;
+      fill: $color-accent;
     }
 
     &:not(:placeholder-shown) + .form-label {
@@ -42,11 +42,11 @@
       line-height: 1.17;
 
       transform: translate(-26px, -39px);
-      color: $accent-color;
+      color: $color-accent;
     }
   }
 
-  // Icon
+  // icon
 
   .icon-wrap {
     position: absolute;
@@ -56,16 +56,16 @@
     transform: translateY(-50%);
 
     display: flex;
-    fill: $secondary-text-color;
+    fill: $color-text-secondary;
 
     .icon {
-      fill: $secondary-text-color;
+      fill: $color-text-secondary;
       @include transition(fill);
     }
   }
 
   &:focus-within .icon {
-    fill: $accent-color;
+    fill: $color-accent;
   }
 
   &:focus-within > .form-label {
@@ -73,11 +73,11 @@
     line-height: 1.17;
 
     transform: translate(-26px, -39px);
-    color: $accent-color;
+    color: $color-accent;
   }
 }
 
-// Textarea
+// textarea
 
 .form-textarea {
   display: block;
@@ -98,7 +98,7 @@
   }
 }
 
-// Checkbox
+// checkbox
 
 .checkbox-field {
   @include flex();
@@ -116,14 +116,14 @@
     overflow: hidden;
 
     &:focus + .checkbox-icon {
-      border-color: $accent-color;
+      border-color: $color-accent;
     }
   }
 
   .checkbox-input:checked + .checkbox-icon {
     border-color: transparent;
     background-color: #2196f3;
-    background-image: url("../images/icon-checked.svg");
+    background-image: url("/images/mark-check.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-origin: border-box;
@@ -143,7 +143,7 @@
   }
 
   &:hover .checkbox-icon {
-    border-color: $accent-color;
+    border-color: $color-accent;
   }
 
   .checkbox-label {
@@ -154,13 +154,13 @@
     }
 
     > .ladel-link {
-      color: $accent-color;
+      color: $color-accent;
       letter-spacing: 0.03em;
     }
   }
 }
 
-// Submit
+// submit
 
 .form-submit {
   display: block;
@@ -174,8 +174,8 @@
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  color: $primary-white-color;
-  background-color: $accent-color;
+  color: $color-white-primary;
+  background-color: $color-accent;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -187,7 +187,7 @@
   }
 }
 
-// Media 1200px
+// media 1200px
 
 @media screen and (min-width: 1200px) {
   .checkbox-label {

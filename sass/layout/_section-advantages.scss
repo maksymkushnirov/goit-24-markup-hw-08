@@ -1,11 +1,11 @@
-// Features
+// section-advantages
 
 .feature-list {
   .icon-wrap {
     @include flex();
     height: 120px;
     margin-bottom: 30px;
-    background-color: $secondary-white-color;
+    background-color: $color-white-secondary;
 
     border-radius: 4px;
   }
@@ -26,7 +26,7 @@
   }
 }
 
-// Media 768px
+// media 768px
 
 @media screen and (min-width: 768px) {
   .feature-list {
@@ -52,7 +52,7 @@
   }
 }
 
-// Media 1200px
+// media 1200px
 
 @media screen and (min-width: 1200px) {
   .feature-list > .item:not(:last-child) {

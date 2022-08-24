@@ -1,4 +1,4 @@
-// Page main
+// sections-main
 
 .page-main {
   &.border-top {
@@ -6,6 +6,6 @@
   }
 
   > .section:nth-last-child(2) {
-    background-color: $secondary-white-color;
+    background-color: $color-white-secondary;
   }
 }

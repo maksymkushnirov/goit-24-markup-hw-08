@@ -1,25 +1,21 @@
-// Font
+//variables
 
-$logo-font: "Raleway", sans-serif;
-$primary-font: "Roboto", sans-serif;
+// font
 
-// Color
+$font-logo: "Raleway", sans-serif;
+$font-primary: "Roboto", sans-serif;
 
-$primary-text-color: #757575;
-$secondary-text-color: #212121;
-$accent-color: #2196f3;
-$primary-white-color: #ffffff;
-$secondary-white-color: #f5f4fa;
-$primary-grey: #afb1b8;
-$secondary-grey: rgba(255, 255, 255, 0.6);
+// color
 
-// /* logo #2196F3 #000000 */
-// /* цвет основного текста #757575 */
-// /* Вторичный цвет текста #212121 */
-// /* Акцент #2196F3 */
-// /* Должности, Адрес rgba(255, 255, 255, 0.6) */
+$color-text-primary: #757575;
+$color-text-secondary: #212121;
+$color-accent: #2196f3;
+$color-white-primary: rgb(255, 255, 255);
+$color-white-secondary: #f5f4fa;
+$color-grey-primary: #afb1b8;
+$color-grey-secondary: rgba(255, 255, 255, 0.6);
 
-// Animation
+// animation
 
 $duration: 250ms;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);

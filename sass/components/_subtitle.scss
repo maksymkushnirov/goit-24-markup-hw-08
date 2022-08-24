@@ -1,6 +1,6 @@
-// Subtitle
+// subtitle
 
-// Exemple Subtitle
+// example-subtitle
 
 .examples-list .subtitle {
   position: absolute;
@@ -14,11 +14,11 @@
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
-  color: $primary-white-color;
+  color: $color-white-primary;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-// Footer Subtitle
+// footer-subtitle
 
 .page-footer .subtitle {
   display: block;
@@ -27,7 +27,7 @@
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
-  color: $primary-white-color;
+  color: $color-white-primary;
   text-transform: uppercase;
 
   @media screen and (max-width: 1199px) {
@@ -35,7 +35,7 @@
   }
 }
 
-// Modal Subtitle
+// modal subtitle
 
 .modal .subtitle {
   display: block;
@@ -44,5 +44,5 @@
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
-  color: $secondary-text-color;
+  color: $color-text-secondary;
 }

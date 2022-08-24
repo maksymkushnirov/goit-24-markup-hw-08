@@ -1,13 +1,13 @@
-// Logo
+// logo
 
 .logo {
   display: block;
 
-  font-family: $logo-font;
+  font-family: $font-logo;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: $accent-color;
+  color: $color-accent;
 
   .primary-color {
     color: #000000;
@@ -17,7 +17,7 @@
     margin-bottom: 20px;
 
     .secondary-color {
-      color: $primary-white-color;
+      color: $color-white-primary;
     }
   }
 

@@ -1,8 +1,8 @@
-// Team
+// team
 
 .team-list > .item {
   padding-bottom: 24px;
-  background-color: $primary-white-color;
+  background-color: $color-white-primary;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -33,7 +33,7 @@
   }
 }
 
-// Social
+// links-social-networks
 
 .team-social {
   display: flex;
@@ -51,17 +51,17 @@
 
     &:hover,
     &:focus {
-      background-color: $accent-color;
+      background-color: $color-accent;
     }
 
     & > .icon {
-      fill: $primary-grey;
+      fill: $color-grey-primary;
       @include transition(fill);
     }
 
     &:hover .icon,
     &:focus .icon {
-      fill: $primary-white-color;
+      fill: $color-white-primary;
     }
   }
 
@@ -70,7 +70,7 @@
   }
 }
 
-// Media 480px
+// media 480px
 
 @media screen and (min-width: 480px) {
   .team-list {
@@ -86,7 +86,7 @@
   }
 }
 
-// Media 768px
+// media 768px
 
 @media screen and (min-width: 768px) {
   .team-list > .item {
@@ -104,7 +104,7 @@
   }
 }
 
-// Media 1200px
+// media 1200px
 
 @media screen and (min-width: 1200px) {
   .team-list > .item:not(:last-child) {

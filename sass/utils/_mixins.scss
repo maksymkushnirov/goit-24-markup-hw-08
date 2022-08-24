@@ -1,3 +1,5 @@
+// mixins
+
 @mixin flex($type: flex, $x: center, $y: center) {
   display: $type;
   justify-content: $x;
