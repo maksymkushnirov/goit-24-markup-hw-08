@@ -1,6 +1,6 @@
 # goit-24-markup-hw-01
 
-Основи HTML. Частина 1 + Основи HTML. Частина 2
+Адаптивна верстка + Адаптивна графіка
 
 Template:\
 https://www.figma.com/file/MXH6NI9ZA8u9GS0fGChENn/Web-Studio?node-id=0%3A1
