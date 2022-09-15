@@ -139,7 +139,7 @@ body.modal-open {
 .section.hero {
   text-align: center;
   background-color: #757575;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("/images/index/hero/mobile/hero-480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("./images/index/hero/mobile/hero-480.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -604,7 +604,7 @@ body.modal-open {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  background-image: url("/images/subscription.svg");
+  background-image: url("./images/subscription.svg");
 }
 
 @media screen and (min-width: 768px) {
@@ -821,7 +821,7 @@ body.modal-open {
 .checkbox-field .checkbox-input:checked + .checkbox-icon {
   border-color: transparent;
   background-color: #2196f3;
-  background-image: url("/images/mark-check.svg");
+  background-image: url("./images/mark-check.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
